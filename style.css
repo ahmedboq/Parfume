@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Montserrat:wght@500;700&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+:root {  
+
+    --Cream: hsl(30, 38%, 92%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+   /* font-family: 'Fraunces', serif;*/
+    background-color: var(--Cream);
+    display: grid;
+    justify-content: center;
+    font-size: 14px;
+    align-content: center;
+    height: 100vh;
+    
+}
+
+#Product{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    margin: 1rem;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+#Product img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+#Product .all-contant{
+    background-color: White;
+    margin: 0 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#Product .all-contant .title{
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--Dark-grayish-blue);
+}
+
+#Product .all-contant .name{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    margin: 20px 0;
+    line-height: 1;
+    color: var(--Very-dark-blue);
+}
+
+#Product .all-contant .desc{
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--Dark-grayish-blue);
+
+}
+
+#Product .all-contant .prise{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+#Product .all-contant .prise .new-prise{
+    font-size: 30px;
+    color: var(--Dark-cyan);
+    margin-right: 20px;
+    font-family: 'Fraunces', serif;
+
+}
+
+#Product .all-contant .pay {
+   display: flex;
+   align-content: center;
+   justify-content: center;
+    padding: 15px;
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+
+
+}
+
+#Product .all-contant .pay .icon{
+    
+    height: 16px;
+    width: 15px;
+    margin-bottom: 100px;
+
+}
+
+/*
+#Product .all-contant .pay ::before{
+    content: "";
+
+    background: url{"images/icon-cart.svg"};
+    height: 16px;
+    width: 15px;
+    margin-right: 10px;
+    
+}
